@@ -5,9 +5,9 @@ Implementation of the Game ROCK, PAPER and Scissors, the game is a console game 
 # Installation
 
 The project is built using Scala and SBT as the build tool with Spec2 as the unit testing framework
- > Scala version : 2.11.6
- > SBT version   : 1.3.8
- > Spec2 version : 3.6.4
+ * Scala version : 2.11.6
+ * SBT version   : 1.3.8
+ * Spec2 version : 3.6.4
  
 Compile project using SBT
   > sbt compile
