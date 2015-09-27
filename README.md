@@ -11,8 +11,11 @@ The project is built using Scala and SBT as the build tool with Spec2 as the uni
  
 Compile project using SBT
   > sbt compile
+
+Test Compile
+  > sbt compile test
   
-Running project using SBT
+Running application using SBT
   > sbt "run-main com.game.rps.Runner"
   
 # Tests
