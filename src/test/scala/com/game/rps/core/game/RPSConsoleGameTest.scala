@@ -24,7 +24,8 @@ class RPSConsoleGameTest extends Specification with Mockito {
       Console.withOut(out) {
         game.printSummary(rounds)
       }
-      out.toString must_== "Summary Unavailable\n"
+      (out.toString must_== "Summary Unavailable\n") or
+        (out.toString must_== "Summary Unavailable\r\n")
 
     }
 
@@ -41,7 +42,8 @@ class RPSConsoleGameTest extends Specification with Mockito {
       Console.withOut(out) {
         game.printSummary(rounds)
       }
-      out.toString must_== "player1 wins 2 - 0  player2\n"
+      (out.toString must_== "player1 wins 2 - 0  player2\n") or
+        (out.toString must_== "player1 wins 2 - 0  player2\r\n")
     }
 
     "Check if summary is printed correctly when player2 wins " >> {
@@ -57,7 +59,8 @@ class RPSConsoleGameTest extends Specification with Mockito {
       Console.withOut(out) {
         game.printSummary(rounds)
       }
-      out.toString must_== "player2 wins 2 - 0  player1\n"
+      (out.toString must_== "player2 wins 2 - 0  player1\n") or
+        (out.toString must_== "player2 wins 2 - 0  player1\r\n")
     }
 
 
@@ -74,7 +77,8 @@ class RPSConsoleGameTest extends Specification with Mockito {
       Console.withOut(out) {
         game.printSummary(rounds)
       }
-      out.toString must_== "Game Tied player1  2 - 2 player2\n"
+      (out.toString must_== "Game Tied player1  2 - 2 player2\n") or
+        (out.toString must_== "Game Tied player1  2 - 2 player2\r\n")
     }
 
   }
