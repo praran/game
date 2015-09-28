@@ -24,3 +24,11 @@ Running application using SBT
   
   executing tests
   > sbt test
+  
+# Intentions
+
+* To keep the application stateless 
+* Used SOLID principles
+* Strategy design pattern
+* Tests cover the business logic and most of the model objects
+
