@@ -30,5 +30,7 @@ Running application using SBT
 * To keep the application stateless 
 * Used SOLID principles
 * Strategy design pattern
+* Extensively used Scala objects with intention of creating singleton objects
+* using implicits and default values for polymorphic behaviour along the lines of open-closed principles
 * Tests cover the business logic and most of the model objects
 
